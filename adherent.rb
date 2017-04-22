@@ -7,19 +7,20 @@ class Adherent
    @prenom=prenom
  end
 
- def emprunter?(document,biblio)
-
+ def emprunter(document,biblio)
     if (biblio.documents.include?(document)) then
-      puts "succe"
+      puts "#{@nom} a emprunté #{document.titre}"
       biblio.documents.delete(document)
-      return true
 
     else
-      puts "echec ce livre n'exite pas "
-      return false
+      puts "#{@nom} peut pas emprunté #{document.titre} car il n'exste pas "
     end
-
  end
 
+ def rendre(document,biblio)
+  biblio.addDocument(document)
+  puts "#{@nom} a rendu #{document.titre}"
+
+ end
 
 end
