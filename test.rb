@@ -4,6 +4,8 @@ biblio = Bibliotheque.new()
 
 a = Adherent.new("mamadou","mountagha","ETUDIANT")
 a2 = Adherent.new("Gamrani","youssef","ENSEGNANT")
+a3 = Adherent.new("Nihou","youssef","ENSEGNANT")
+
 l1=Livre.new("L1","ait lahcen")
 l2=Livre.new("L2","ait lahcen")
 r1=Revue.new(1,"R1")
@@ -17,6 +19,8 @@ windows=OrdinateurPortable.new("Hp","Windows")
 
 biblio.addAdherent(a)
 biblio.addAdherent(a2)
+biblio.addAdherent(a3)
+
 biblio.addDocument(l1)
 biblio.addDocument(l2)
 biblio.addDocument(r1)
@@ -28,9 +32,18 @@ biblio.addDocument(bd2)
 biblio.addMateriel(linux)
 biblio.addMateriel(windows)
 
-
+puts "--Transaction--"
 a.emprunter(l2,biblio)
+a3.emprunter(bd1,biblio)
+puts "--Transaction--"
 a2.emprunter(l2,biblio)
+puts "--Transaction--"
 a2.emprunter(l1,biblio)
+puts "--Transaction--"
 a.rendre(l2,biblio)
+puts "--Transaction--"
 a2.emprunter(l2,biblio)
+puts "result : "
+a.afficherEmprunts()
+a2.afficherEmprunts()
+a3.afficherEmprunts()
