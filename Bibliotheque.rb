@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require_relative "adherent"
 require_relative "bd"
 require_relative "dictionnaire"

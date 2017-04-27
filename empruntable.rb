@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 module Empruntable
 
   def isDisponible?

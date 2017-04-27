@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require_relative "empruntable"
 require_relative "volume"
 
@@ -11,3 +13,4 @@ class Livre < Volume
   
 
 end
+#transfere dans dictionaire

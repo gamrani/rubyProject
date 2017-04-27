@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require_relative "document"
 
 class Volume < Document

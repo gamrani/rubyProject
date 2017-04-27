@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require_relative "volume"
 
 class BandeDessine < Volume
@@ -11,3 +13,5 @@ class BandeDessine < Volume
    end
 
 end
+#transfere dans dictionnaire
+

@@ -1,3 +1,6 @@
+#!/usr/bin/ruby
+
+require_relative "bibliotheque"
 require_relative "materiel"
 require_relative "empruntable"
 
@@ -13,5 +16,5 @@ class OrdinateurPortable < Materiel
     @os=os
   end
 
-
+ 
 end

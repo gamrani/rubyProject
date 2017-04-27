@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 class Document
  attr_accessor :titre
 

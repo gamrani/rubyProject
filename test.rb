@@ -1,3 +1,5 @@
+#!/usr/bin/ruby 
+
 require_relative "Bibliotheque"
 
 biblio = Bibliotheque.new()
@@ -8,6 +10,10 @@ a3 = Adherent.new("Nihou","youssef","ENSEGNANT")
 
 l1=Livre.new("L1","ait lahcen")
 l2=Livre.new("L2","ait lahcen")
+l3=Livre.new("L3","ait lahcen")
+l4=Livre.new("L4","ait lahcen")
+l5=Livre.new("L5","ait lahcen")
+l6=Livre.new("L6","ait lahcen")
 r1=Revue.new(1,"R1")
 r2=Revue.new(2,"R2")
 d1=Dictionnaire.new("Theme1","auteur1","titre1")
@@ -23,6 +29,10 @@ biblio.addAdherent(a3)
 
 biblio.addDocument(l1)
 biblio.addDocument(l2)
+biblio.addDocument(l3)
+biblio.addDocument(l4)
+biblio.addDocument(l5)
+biblio.addDocument(l6)
 biblio.addDocument(r1)
 biblio.addDocument(r2)
 biblio.addDocument(d1)
@@ -34,6 +44,11 @@ biblio.addMateriel(windows)
 
 puts "--Transaction--"
 a.emprunter(l2,biblio)
+a.emprunter(l1,biblio)
+a.emprunter(l3,biblio)
+a.emprunter(l4,biblio)
+a.emprunter(l5,biblio)
+a.emprunter(l6,biblio)
 a3.emprunter(bd1,biblio)
 puts "--Transaction--"
 a2.emprunter(l2,biblio)
@@ -47,3 +62,4 @@ puts "result : "
 a.afficherEmprunts()
 a2.afficherEmprunts()
 a3.afficherEmprunts()
+
